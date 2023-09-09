@@ -2,7 +2,7 @@
 using namespace std;
 
 int main(){
-    float base =1;
+    float base;
     cin >> base;
     int exponent;
     cin>> exponent;
@@ -11,7 +11,12 @@ int main(){
 
     while(exponent!=0){
         result = result*base;
-        --exponent;
+        exponent--;
     }
     cout << result << endl;
 }
+
+
+
+// Can be calculated using pow function
+//pow(base , exponent);
