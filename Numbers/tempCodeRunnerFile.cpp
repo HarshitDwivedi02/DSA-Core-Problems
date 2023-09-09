@@ -1,1 +1,2 @@
-isPrime(n);
+cout << reverse << endl;
+    // cout << num << endl;
