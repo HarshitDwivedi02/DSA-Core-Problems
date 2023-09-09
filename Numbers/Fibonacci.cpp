@@ -8,9 +8,9 @@ int main(){
     int a = 0;
     int b = 1;
     cout << a <<" " << b;
-    for(int i=1;i<=n;i++){
+    for(int i=2;i<=n;i++){
         int next = a+b;
-        cout << next <<" ";
+        cout <<" "<< next <<" ";
         a=b;
         b=next;
     }
