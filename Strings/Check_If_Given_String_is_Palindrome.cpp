@@ -1,35 +1,43 @@
-#include<bits/stdc++.h>
-
+// C++ program for the above approach
+#include <bits/stdc++.h>
 using namespace std;
 
-bool isPalindrome(string s) {
+// Function to check whether
+// the string is palindrome
+string isPalindrome(string S)
+{
+	// Stores the reverse of the
+	// string S
+	string P = S;
 
-        int left = 0, right = s.length()-1;
-        while(left<right)
-        {
-            if(!isalnum(s[left])) 
-                left++;
-            else if(!isalnum(s[right])) 
-                right--;
-            else if(tolower(s[left])!=tolower(s[right])) 
-                return false;
-            else {
-                left++; 
-                right--;
-            }
-        }
-        return true;
+	// Reverse the string P
+	reverse(P.begin(), P.end());
 
+	// If S is equal to P
+	if (S == P)
+	{
+		// Return "Yes"
+		return "Yes";
+	}
+	// Otherwise
+	else
+	{
+		// return "No"
+		return "No";
+	}
 }
-int main() {
 
-  string str = "ABCDCBA";
-  bool ans = isPalindrome(str);
+// Driver Code
+int main()
+{
+	string S;
+  cin >> S;
+	cout << isPalindrome(S);
 
-  if (ans == true) {
-    cout << "Palindrome";
-  } else {
-    cout << "Not Palindrome";
-  }
-  return 0;
+	return 0;
 }
+
+
+// Using reverse inbuilt function also it can be done
+
+
