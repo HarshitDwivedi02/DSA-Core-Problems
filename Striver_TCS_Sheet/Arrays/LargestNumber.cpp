@@ -20,9 +20,19 @@ int largestelement(int arr[] , int n){
 int main(){
     int arr1[] = {2,41,3,55,10};
     int arr2[] = {54,32,21,99,30};
+    int arr3[] = {33,1,76,67,11};
+    int arr4[] = {91,20,44,5,117};
     int n = 5;
 
     cout<<"The Largest number is: " << largestelement(arr1 , n) << endl;
-    cout <<"The Largest number is: " << largestelement(arr2 , n);
+    cout<<"The Largest number is: " << largestelement(arr2 , n) << endl;
+    cout<<"The Largest number is: " << largestelement(arr3, n) << endl;
+    cout<<"The Largest number is: " << largestelement(arr4, n) << endl;
+
 }
+
+
+
+
+
 
