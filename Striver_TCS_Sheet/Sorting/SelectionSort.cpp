@@ -1,8 +1,6 @@
 #include<iostream>
 using namespace std;
 
-
-
 int selectionsort(int arr[] ,int n){
     vector<int> ans;
     for(int i=0;i<n;i++){
@@ -16,10 +14,7 @@ int selectionsort(int arr[] ,int n){
         }
 
     }
-
 }
-
-
 int main(){
 
     int n;
@@ -28,10 +23,8 @@ int main(){
     for(int i=0;i<n;i++){
         cin>>arr[i];
     }
-    
-
-
-
     return 0;
-
 }
+
+
+
